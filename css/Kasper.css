@@ -1,0 +1,104 @@
+/* Start Variables */
+:root {
+  --main-color: #00c7fc;
+}
+/* End Variables */
+/* Start Global Rules */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    background-color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    /* width: 600px; */
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+/* Medium */
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+/* Large */
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1140px;
+    }
+  }
+/* End Global Rules */
+/* Start Header */
+header {
+
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+header .container::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+  height: 1px;
+  width: calc(100% - 30px);
+  background: #636364;
+}
+header .container .active a {
+  color: var(--main-color);
+}
+header .container .active a {
+  color: var(--main-color);
+}
+header .container nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+}
+header ul {
+  display: flex;
+}
+header ul li {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+header ul li a {
+  text-decoration: none;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-size: 17px;
+  font-weight: 600;
+  color: white;
+}
+.logo img {
+  height: 50px;
+}
+.form i {
+  color: white;
+  position: relative;
+}
+.form i::after {
+  content: '';
+}
+/* End Header */
