@@ -2,6 +2,8 @@
 :root {
   --main-color: #00c7fc;
   --seconday-color: #a8a8a8;
+  --third-color: #1f2021;
+  --main-line-height: 1.6;
   --transparent-main-color: rgb(0 199 252 / 70%);
   --section-padding: 100px;
 }
@@ -55,7 +57,7 @@ ul {
   font-size: 40px;
   font-weight: normal;
   text-transform: uppercase;
-  color: #1f2021;
+  color: var(--third-color);
   margin-bottom: 60px;
 }
  .main-heading h2::before {
@@ -63,7 +65,7 @@ ul {
     position: absolute;
     width: 150px;
     height: 1px;
-    background: #1f2021;
+    background: var(--third-color);
     left: 50%;
     transform: translateX(-50%);
     bottom: -25px;
@@ -86,7 +88,7 @@ ul {
   font-size: 17px;
   width: 500px;
   max-width: 100%;
-  line-height: 1.6;
+  line-height: var(--main-line-height);
   margin: auto;
   margin-bottom: 100px;
 }
@@ -228,12 +230,12 @@ header .form i {
 .landing .text h2 {
   font-size: 30px;
   font-weight: normal;
-  line-height: 1.6;
+  line-height: var(--main-line-height);
   margin-bottom: 20px;
 }
 .landing .text p {
   font-size: 14px;
-  line-height: 2;
+  line-height: var(--main-line-height);
 }
 .landing .fa-angle-left {
   position: absolute;
@@ -310,7 +312,7 @@ header .form i {
     margin-bottom: 30px;
 }
 .services .services-list .srv-box p {
-  line-height: 2;
+  line-height: var(--main-line-height);
   color: var(--seconday-color);
 }
 /* End Services */
@@ -529,7 +531,7 @@ header .form i {
   text-decoration: none;
   color: white;
   text-transform: capitalize;
-  background: #1f2021;
+  background: var(--third-color);
   padding: 10px 30px;
   width: fit-content;
   margin: auto;
@@ -598,7 +600,7 @@ header .form i {
   width: 40px;
   height: 40px;
   color: white;
-  background-color: #1f2021;
+  background-color: var(--third-color);
   border-radius: 50%;
   margin: 0 auto 20px;
 }
@@ -683,11 +685,11 @@ header .form i {
 .testi-skills .testimonials .member .text {
   position: relative;
   flex-basis: 75%;
-  border-bottom: 1px solid #1f2021;
+  border-bottom: 1px solid var(--third-color);
 }
 .testi-skills .testimonials .member .text p {
   color: rgb(31, 32, 33);
-  line-height: 2;
+  line-height: var(--main-line-height);
   font-weight: 300;
   margin-bottom: 10px;
 }
@@ -705,7 +707,7 @@ header .form i {
   margin-bottom: 20px;
 }
 .testi-skills h2 {
-  color: #1f2021;
+  color: var(--third-color);
   font-weight: normal;
   text-transform: uppercase;
   text-align: center;
@@ -715,7 +717,7 @@ header .form i {
 .testi-skills .skills > p {
   color: #a8a8a8;
   font-weight: 300;
-  line-height: 1.6;
+  line-height: var(--main-line-height);
   text-align: center;
   margin: 0 0 30px;
 }
@@ -794,7 +796,7 @@ header .form i {
   font-size: 33px;
   text-align: center;
   margin-bottom: 20px;
-  line-height: 1.6;
+  line-height: var(--main-line-height);
 }
 .quote .container q::before {
   content: '\f10e';
@@ -847,7 +849,7 @@ header .form i {
   position: relative;
   display: block;
   font-size: 60px;
-  color: #1f2021;
+  color: var(--third-color);
   font-weight: 600;
 }
 .pricing .head span::before {
@@ -891,7 +893,7 @@ header .form i {
 .pricing .footer a {
   display: block;
     text-decoration: none;
-    color: #1f2021;
+    color: var(--third-color);
     width: fit-content;
     background-color: var(--main-color);
     margin: 40px auto 20px;
@@ -1014,7 +1016,7 @@ header .form i {
 }
 .contact form ::placeholder {
   text-transform: uppercase;
-  color: #1f2021;
+  color: var(--third-color);
 }
 .contact form .main-input:focus {
   outline: none;
@@ -1041,7 +1043,7 @@ header .form i {
 .contact .contact-info {
   flex: 1;
   margin-left: 25px;
-  color: #1f2021;
+  color: var(--third-color);
 }
 @media (max-width: 767px) {
   .contact .contact-info {
@@ -1053,7 +1055,7 @@ header .form i {
 .contact .contact-info h3 {
   margin-bottom: 40px;
   text-transform: uppercase;
-  color: #1f2021;
+  color: var(--third-color);
   font-size: 17px;
 }
 .contact .contact-info span.phone {
@@ -1065,7 +1067,7 @@ header .form i {
   margin-top: 90px;
 }
 .contact .contact-info address {
-  line-height: 2;
+  line-height: var(--main-line-height);
   color: #a8a8a8;
 }
 /* End Contact */
